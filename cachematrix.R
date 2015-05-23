@@ -1,5 +1,4 @@
 ## The purpose of this assignment is to find an inverse of a square matrix
-
 ##  The first function makeCacheMatrix is a function 
 ##   where the input is x: a square invertible matrix and 
 ##   return: a list containing functions to
@@ -21,12 +20,10 @@ getinv = function() inv
 list(set=set, get=get, setinv=setinv, getinv=getinv)
 }
 
-##  This function find the inverse of the matrix
-##  The output x: output of makeCacheMatrix()
-##  Return :the inverse of the original matrix input to makeCacheMatrix()
+## This function cacheSolve is to find the inverse of the matrix
+## The input is x: output of makeCacheMatrix
+## return: the inverse of the original matrix input to makeCacheMatrix
 
-cacheSolve <- function(x, ...) {
-## Return a matrix that is the inverse of 'x'
 inv = x$getinv()       
 # if the inverse has already been calculated
 if (!is.null(inv)){
